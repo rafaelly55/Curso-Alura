@@ -1,0 +1,35 @@
+:root {
+    --cor-primaria: #84B179;
+    --cor-secundaria: #A2CB8B;
+    --cor-terciaria: #C7EABB;
+    --cor-quartenaria: #E8F5BD;
+    --cor-texto: #254F22;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+    display: flex;
+    font-size: 30px;
+}
+
+.navegacao {
+    padding: 2% 0% 0% 10%;
+}
+
+.navegacao__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.navegacao__menu__link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 500px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    text-align: right;
+    height: 20px;
+}
