@@ -10,51 +10,69 @@ body {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align:left;
-    display: flex;
-    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+   .pagina__titulo {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--cor-texto);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
+
 .navegacao {
-    padding: 0% 0% 0% 0%;
-    
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-quartenaria);
 }
 
 .navegacao__menu {
+    gap: 20px; 
     display: flex;
-    gap: 80px;
 }
 
 .navegacao__menu__link {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: 500px;
-    color: var(--cor-texto);
-    text-decoration: none;
-    text-align: right;
-    height: 20px;
+    font-weight:bold;
+   color: var(--cor-quartenaria);
+   transition: color 0.3s;
+   text-decoration: none;
+   font-size: 30px;
 }
 
-/* O contêiner principal deve cobrir toda a tela ou o local desejado */
+.imagem {
+  z-index: -1;
+}
+
+.container-flores:houver {
+   color: var(--cor-quartenaria);
+}
+
+
+
 .container-flores {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    pointer-events: none; /* Permite que o usuário clique através das flores */
+    pointer-events: none; 
     overflow: hidden;
+    z-index: -1;
   }
   
-  /* Estilização básica e aplicação do Keyframe */
+  
   .flor {
     position: absolute;
-    top: -10%; /* Começa um pouco acima da tela */
+    top: -10%; 
     font-size: 24px;
     animation: cairFlor 7s linear infinite;
   }
   
-  /* Definindo tempos diferentes para cada flor parecer natural */
+  
   .flor:nth-child(1) {
     left: 20%;
     animation-duration: 7s;
@@ -65,7 +83,7 @@ body {
     left: 60%;
     animation-duration: 9s;
     animation-delay: 2s;
-    font-size: 32px; /* Tamanhos variados */
+    font-size: 32px; 
   }
   
   .flor:nth-child(3) {
@@ -74,18 +92,18 @@ body {
     animation-delay: 1s;
   }
   
-  /* O Keyframe que realiza a mágica da queda e rotação */
+  
   @keyframes cairFlor {
     0% {
       transform: translateY(0) rotate(0deg);
       opacity: 1;
     }
     90% {
-      opacity: 1; /* Mantém visível até quase o final */
+      opacity: 1; 
     }
     100% {
       transform: translateY(110vh) rotate(360deg);
-      opacity: 0; /* Some ao chegar embaixo */
+      opacity: 0; 
     }
   }
   
