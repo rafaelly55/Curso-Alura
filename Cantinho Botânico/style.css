@@ -74,6 +74,31 @@ body {
   border-color: aliceblue;
 }
 
+      .html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+  
+      .body {
+        background-image: url(ChatGPT\ Image\ 20\ de\ mai.\ de\ 2026\,\ 21_38_41.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .conteudo {
+        text-align: center;
+        color: white;  
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 50px;
+      }
+
+      .h1 {
+        font-size: 50px;
+      }
+
 .imagem {
   z-index: -1;
 }
