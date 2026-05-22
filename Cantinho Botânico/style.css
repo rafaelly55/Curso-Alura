@@ -1,4 +1,3 @@
-
 :root {
     --cor-primaria: #84B179;
     --cor-secundaria: #A2CB8B;
@@ -69,10 +68,18 @@ body {
 .botao {
   background-color: var(--cor-secundaria);
   border-radius: 15px;
-  color: white;
+  color: var(--cor-texto);
+  cursor: pointer;
   font-size: 40px;
   border-color: aliceblue;
+  transition: color 0.3 ease;
 }
+
+.botao:houver {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-quartenaria);
+}
+
 
       .html, body {
         margin: 0;
